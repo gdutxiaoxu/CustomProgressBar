@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            style="@style/progressBar_custom_drawable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ProgressBar
+            style="@style/progressBar_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <com.xujun.administrator.customprogressbar.HorizontalProgressBarWithNumber
+            android:id="@+id/id_progressbar01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dip"
+            android:padding="5dp"/>
+
+
+        <com.xujun.administrator.customprogressbar.HorizontalProgressBarWithNumber
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dip"
+            android:padding="5dp"
+            android:progress="50"
+            zhy:progress_text_color="#ffF53B03"
+            zhy:progress_unreached_color="#ffF7C6B7"/>
+
+        <com.xujun.administrator.customprogressbar.RoundProgressBarWidthNumber
+            android:id="@+id/id_progress02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dip"
+            android:padding="5dp"
+            android:progress="30"/>
+
+        <com.xujun.administrator.customprogressbar.RoundProgressBarWidthNumber
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dip"
+            android:padding="5dp"
+            android:progress="50"
+            zhy:progress_reached_bar_height="20dp"
+            zhy:progress_text_color="#ffF53B03"
+            zhy:radius="60dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
